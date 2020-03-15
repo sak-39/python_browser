@@ -90,8 +90,8 @@ if __name__ == '__main__':
 
     app = QApplication(sys.argv)
 
-    use_tor = 0
-    if use_tor == 1:
+    use_tor = False
+    if use_tor == True:
         proxy = QtNetwork.QNetworkProxy()
         proxy.setType(QtNetwork.QNetworkProxy.Socks5Proxy)
         proxy.setHostName("127.0.0.1")
